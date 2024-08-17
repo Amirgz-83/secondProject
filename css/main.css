@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+div#menu {
+  width: 100%;
+  height: 50px;
+  background-color: #2b2b2b;
+}
+div#menu > nav {
+  width: 100%;
+  height: 100%;
+}
+div#menu > nav > ul {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+div#menu > nav > ul > li {
+  display: block;
+  transition: all 200ms linear;
+  height: 100%;
+  padding: 15px 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+  color: whitesmoke;
+}
+.hidden {
+  display: none;
+}
+.active {
+  display: block;
+}
+.bg-yellow {
+  background-color: rgb(255, 208, 0);
+  border-radius: 10px;
+}
+.text-dark {
+  color: #2b2b2b !important;
+}
+div#form {
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px;
+}
+div#form > div {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+}
+div#form > div > h1 {
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+div#root {
+  background-color: #d3d3d3;
+  width: 100%;
+  height: auto;
+}
+div#root > div:nth-of-type(1) {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  z-index: 0;
+  padding-top: 20px;
+  background-image: url("https://w0.peakpx.com/wallpaper/353/126/HD-wallpaper-dark-abstract-black-minimal-abstract-dark-black-minimalism-minimalist.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.input {
+  outline: none;
+  width: 90%;
+  border: inset 5px 5px 5px whitesmoke;
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 10px;
+  font-family: sans-serif;
+  transition: all 300ms linear;
+  margin: 10px auto;
+}
+.input-2 {
+  outline: none;
+  width: 100%;
+  border-radius: 15px;
+  border: 2px inset rgb(255, 208, 0);
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 10px;
+  font-family: sans-serif;
+  transition: all 300ms linear;
+  margin: 10px auto;
+}
+.label {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+div#form > div > textarea {
+  resize: none;
+  width: 90%;
+  background-color: transparent;
+  color: whitesmoke;
+  padding: 8px;
+  height: 80px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+div#access {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  color: black;
+  gap: 10px;
+  border-radius: 10px;
+  position: absolute;
+  user-select: none;
+  left: 10px;
+  top: 200px;
+  padding: 5px;
+  text-align: left;
+  background-color: whitesmoke;
+  position: fixed;
+}
+div#access > div {
+  display: block;
+  text-align: left;
+  background-color: whitesmoke;
+  padding: 8px;
+  display: none;
+  transition: all 300ms ease;
+}
+div#access > div > a {
+  text-decoration: none;
+  color: #2b2b2b;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+div#about {
+  background-color: #2b2b2b;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+div#about > h1 {
+  display: block;
+  margin: 0 auto;
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+div#about > div {
+  width: 100%;
+  margin-top: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-flow: row-reverse wrap;
+  padding: 10px;
+}
+div#about > div > img {
+  height: 100%;
+  width: 25%;
+  object-fit: cover;
+  display: block;
+  transition: all 300ms linear;
+}
+div#about > div > p {
+  display: block;
+  color: whitesmoke;
+  height: 100%;
+  text-transform: capitalize;
+  padding: 10px;
+  width: 70%;
+  user-select: none;
+  margin: 0 auto;
+  transition: all 300ms linear;
+}
+div#about > div > img:hover {
+  box-shadow: 5px 5px 5px yellow;
+}
+div#about > div > p:hover {
+  box-shadow: 2px 2px 2px black;
+}
+div#products {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: #d3d3d3;
+}
+div[name="kala"] {
+  width: 30%;
+  perspective: 800px;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 300ms ease;
+  position: relative;
+  margin-bottom: 10px;
+}
+div[name="kala"] > img {
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  transform: scale(0.8, 0.8);
+  transition: all 300ms linear;
+}
+div[name="kala"] > h1 {
+  text-transform: capitalize;
+  user-select: none;
+}
+div[name="kala"] > p {
+  text-transform: capitalize;
+  height: auto;
+  display: block;
+  text-align: left;
+  transform: scale(0.8, 0.8);
+}
+div[name="kala"]:hover > img {
+  box-shadow: 5px 5px 5px yellow;
+  transform: scale(1, 1);
+}
+div[name="kala"]:hover {
+  box-shadow: 10px 10px 10px black;
+  border-radius: 20px;
+}
+div[name="kala"] > div:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  background-color: #2b2b2b;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+div[name="kala"] > div:nth-of-type(2) {
+  position: absolute;
+  top: 100%;
+  border-radius: 20px;
+  opacity: 0;
+  left: 0;
+  background-color: rgb(255, 208, 0);
+  width: 100%;
+  transition: all 1s ease;
+  height: 30px;
+}
+div[name="kala"]:hover > div:nth-of-type(1) {
+  animation: animate-1 400ms linear;
+}
+div[name="kala"]:hover > div:nth-of-type(2) {
+  animation: animate-2 400ms linear;
+}
+@keyframes animate-1 {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+  }
+}
+@keyframes animate-2 {
+  from {
+    opacity: 0;
+    top: 100%;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+div#footer {
+  background-color: #2b2b2b;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+div#footer > h1 {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  user-select: none;
+  text-transform: capitalize;
+  color: whitesmoke;
+}
+div[name="agreements"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 30px;
+  width: 100%;
+  color: whitesmoke;
+  padding: 20px;
+  gap: 10px;
+  height: auto;
+  justify-content: space-around;
+}
+div[name="agreements"] > p {
+  text-transform: capitalize;
+  text-align: justify;
+  display: block;
+  width: 70%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+div[name="agreements"] > img {
+  object-fit: cover;
+  width: 28%;
+  display: block;
+  border-radius: 20px / 20px;
+  object-position: center;
+}
+div[name="footer"] {
+  width: 100%;
+  height: auto;
+  display: flex;
+  color: whitesmoke;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+  flex-flow: column wrap;
+  padding: 20px;
+  background-color: black;
+}
